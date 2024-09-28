@@ -16,9 +16,9 @@ fun main() {
     }
     var oddNumber: Int? = null
     if (firstDigit % 2 != 0) {
-        oddNumber = firstDigit * 10 + secondDigit
-    } else if (secondDigit % 2 != 0) {
         oddNumber = secondDigit * 10 + firstDigit
+    } else if (secondDigit % 2 != 0) {
+        oddNumber =firstDigit * 10 + secondDigit
     }
     if (oddNumber != null) {
         println("Созданное нечетное число: $oddNumber")
